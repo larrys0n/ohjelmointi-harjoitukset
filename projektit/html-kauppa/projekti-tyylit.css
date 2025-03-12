@@ -1,0 +1,9 @@
+.projekti-banneri {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    font-size: x-small;
+    justify-content: center;
+    background-color: green;
+    color: whitesmoke;
+}
