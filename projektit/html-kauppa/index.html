@@ -2,6 +2,7 @@
 
 <head>
     <link href="style.css" rel="stylesheet" />
+    <link href="projekti-tyylit.css" rel="stylesheet" />
     <style>
         @font-face {
             font-family: "opensans";
@@ -11,256 +12,284 @@
 </head>
 
 <body class="body">
-    <header class="sivun-yläpalkki">
-        <div class="sivun-yläpalkki__ylempi-rivi">
-            <h1 class="sivun-yläpalkki__ylempi-rivi__otsikko"><a href="#" class="logo">Kauppa's</a></h1>
-            <div class="sivun-yläpalkki__ylempi-rivi__haku">
-                <div class="hakupalkki">
-                    <img class="sivun-yläpalkki__ylempi-rivi__haku-ikoni" src="magnifying-glass-solid.svg"
-                        height="20px">
-                    <input class="sivun-yläpalkki__ylempi-rivi__hae-tuotteista" placeholder="Hae tuotteista"></input>
-                </div>
-            </div>
-            <div class="sivun-yläpalkki__ylempi-rivi__tili">
-                <div class="oma-tili">
-                    <img class="oma-tili-ikoni oma-tili-ikoni--vaalea" src="user-solid.svg" height="20px">
-                    <img class="oma-tili-ikoni oma-tili-ikoni--tumma" src="user-solid-dark.svg" height="20px">
-                    <div class="sivun-yläpalkki__ylempi-rivi__kirjaudu">Kirjaudu / Luo tili</div>
-                </div>
-            </div>
-            <div class="sivun-yläpalkki__ylempi-rivi__ostoskori">
-                <img class="sivun-yläpalkki__ylempi-rivi__ostoskori__kuva--vaalea" src="cart-shopping-solid.svg"
-                    height="20px" />
-                <img class="sivun-yläpalkki__ylempi-rivi__ostoskori__kuva--tumma" src="cart-shopping-solid-dark.svg"
-                    height="20px" />
-            </div>
-        </div>
-        <ul class="sivun-yläpalkki__alempi-rivi">
-            <li class="sivun-yläpalkki__alempi-rivi__tietokoneet"><a href="#">Tietokoneet</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__komponentit"><a href="#">Komponentit</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__oheislaitteet"><a href="#">Oheislaitteet</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__pelaaminen"><a href="#">Pelaaminen</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__sim-racing"><a href="#">Sim racing</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__verkkotuotteet"><a href="#">Verkkotuotteet</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__tarvikkeet"><a href="#">Tarvikkeet</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__erikoistuotteet"><a href="#">Erikoistuotteet</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__ohjelmistot"><a href="#">Ohjelmistot</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__palvelut"><a href="#">Palvelut</a></li>
-            <li class="sivun-yläpalkki__alempi-rivi__kampanjat"><a href="#">Kampanjat</a></li>
-        </ul>
+    <header class="projekti-banneri">
+        <h1 class="projekti-banneri__otsikko">Tämä on harjoitustyö - Referenssinä käytetty sivua Jimms.fi</h1>
     </header>
-    <section class="sivun-sisältö"></section>
-    <footer class="sivun-alapalkki">
-        <div class="sivun-alapalkki__harmaa-alue">
-            <div class="sivun-alapalkki__harmaa-alue__yläosa">
-                <div class="sivun-alapalkki__harmaa-alue__yläosa__rivi">
-                    <div class="sivun-alapalkki__harmaa-alue__sarake">
-                        <div class="asiakaspalvelu">
-                            <h2 class="asiakaspalvelu__otsikko harmaa-osio__otsikko">Asiakaspalvelu</h2>
-                            <div class="asiakaspalvelu__aukioloajat">Ma - Su 24 / 7</div>
-                            <div class="aspa-puhelin">
-                                <img class="asiakaspalvelu__puhelin-ikoni" src="phone-solid.svg" height="20px">
-                                <div class="asiakaspalvelu__puhelinnumero">+222 22 22 22222</div>
-                            </div>
-                            <div class="aspa-sähköposti">
-                                <img class="asiakaspalvelu__sähköposti-ikoni" src="envelope-solid.svg" height="20px">
-                                <div class="asiakaspalvelu__sähköpostiosoite">asiakaspalvelu@kauppa.tld</div>
-                            </div>
-                        </div>
-                        <div class="yritysmyynti">
-                            <h2 class="yritysmyynti__otsikko harmaa-osio__otsikko">Yritysmyynti</h2>
-                            <div class="yritysmyynti__aukioloajat">Ma - Su 24 / 7</div>
-                            <div class="yritysmyynti-puhelin">
-                                <img class="yritysmyynti__puhelin-ikoni" src="phone-solid.svg" height="20px">
-                                <div class="yritysmyynti__puhelinnumero">+222 22 22 22222</div>
-                            </div>
-                            <div class="yritysmyynti-sähköposti">
-                                <img class="yritysmyynti__sähköposti-ikoni" src="envelope-solid.svg" height="20px">
-                                <div class="yritysmyynti__sähköpostiosoite">yritysmyynti@kauppa.tld</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="myymälä">
-                        <h2 class="myymälä__otsikko harmaa-osio__otsikko">Myymälä Turku</h2>
-                        <ul class="myymälä__aukioloajat">
-                            <li class="myymälä__aukioloajat__ma-pe">Ma - Pe 11:00 - 22:00</li>
-                            <li class="myymälä__aukioloajat__la">La 10:00 - 22:00</li>
-                        </ul>
-                        <div class="myymälä__maksutavat">Maksuvälineenä käyvät yleisimmät pankki- ja luottokortit sekä
-                            mobiilimaksutavat. Ei käteismaksumahdollisuutta.</div>
-                        <div class="myymälä__sijainti">
-                            <img class="myymälä__sijainti-ikoni" src="location-dot-solid.svg" height="20px">
-                            <div class="myymälä__sijainti__osoite">
-                                <div class="myymälä__katuosoite">Kakskakkosenkatu 22</div>
-                                <div class="myymälä__postinumero-ja-kaupunki">22222 Turku</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="yhteisöt">
-                        <h2 class="yhteisöt__otsikko harmaa-osio__otsikko">Yhteisöt</h2>
-                        <ul class="yhteisöt__kuvakkeet">
-                            <li class="yhteisöt__facebook"><a href="#"><img class="facebook--vaalea" src="facebook-brands-solid.svg"
-                                        height="20px"><img class="facebook--oranssi" src="facebook-orange.svg" height="20px"></a></li>
-                            <li class="yhteisöt__instagram"><a href="#"><img class="instagram--vaalea" src="instagram-brands-solid.svg"
-                                        height="20px"><img class="instagram--oranssi" src="instagram-orange.svg" height="20px"></a></li>
-                            <li class="yhteisöt__twitter"><a href="#"><img class="twitter--vaalea" src="twitter-brands-solid.svg"
-                                        height="20px"><img class="twitter--oranssi" src="twitter-orange.svg" height="20px"></a></li>
-                            <li class="yhteisöt__youtube"><a href="#"><img class="youtube--vaalea" src="youtube-brands-solid.svg"
-                                        height="20px"><img class="youtube--oranssi" src="youtube-orange.svg" height="20px"></a></li>
-                            <li class="yhteisöt__tiktok"><a href="#"><img class="tiktok--vaalea" src="tiktok-brands-solid.svg"
-                                        height="20px"><img class="tiktok--oranssi" src="tiktok-orange.svg" height="20px"></a></li>
-                            <li class="yhteisöt__linkedin"><a href="#"><img class="linkedin--vaalea" src="linkedin-brands-solid.svg"
-                                        height="20px"><img class="linkedin--oranssi" src="linkedin-orange.svg" height="20px"></a></li>
-                        </ul>
-                    </div>
-                    <div class="uutiskirje">
-                        <h2 class="uutiskirje__otsikko harmaa-osio__otsikko">Tilaa uutiskirje</h2>
-                        <div class="uutiskirje__teksti">Tilaa Kauppa'sin uutiskirje ja saat ensimmäisten joukossa tietoa
-                            tarjouksista, tapahtumista ja uusista tuotteista.
-                            <h2 class="uutiskirje__nappi"><button type="button" class="uutiskirje__nappi__nappula">Tilaa
-                                    uutiskirje</button></h2>
-                        </div>
+    <main>
+
+        <header class="sivun-yläpalkki">
+            <div class="sivun-yläpalkki__ylempi-rivi">
+                <h1 class="sivun-yläpalkki__ylempi-rivi__otsikko"><a href="#" class="logo">Kauppa's</a></h1>
+                <div class="sivun-yläpalkki__ylempi-rivi__haku">
+                    <div class="hakupalkki">
+                        <img class="sivun-yläpalkki__ylempi-rivi__haku-ikoni" src="magnifying-glass-solid.svg"
+                            height="20px">
+                        <input class="sivun-yläpalkki__ylempi-rivi__hae-tuotteista"
+                            placeholder="Hae tuotteista"></input>
                     </div>
                 </div>
+                <div class="sivun-yläpalkki__ylempi-rivi__tili">
+                    <div class="oma-tili">
+                        <img class="oma-tili-ikoni oma-tili-ikoni--vaalea" src="user-solid.svg" height="20px">
+                        <img class="oma-tili-ikoni oma-tili-ikoni--tumma" src="user-solid-dark.svg" height="20px">
+                        <div class="sivun-yläpalkki__ylempi-rivi__kirjaudu">Kirjaudu / Luo tili</div>
+                    </div>
+                </div>
+                <div class="sivun-yläpalkki__ylempi-rivi__ostoskori">
+                    <img class="sivun-yläpalkki__ylempi-rivi__ostoskori__kuva--vaalea" src="cart-shopping-solid.svg"
+                        height="20px" />
+                    <img class="sivun-yläpalkki__ylempi-rivi__ostoskori__kuva--tumma" src="cart-shopping-solid-dark.svg"
+                        height="20px" />
+                </div>
             </div>
-        </div>
-        <div class="sivun-alapalkki__harmaa-alue__alaosa">
-            <div class="sivun-alapalkki__harmaa-alue__alaosa__sisältö">
-                <div class="info">
-                    <h2 class="info__otsikko harmaa-osio__otsikko">Info</h2>
-                    <div class="info__listaus">
-                        <div class="info__listaus__ikonit">
-                            <img class="info__listaus__yhteystiedot__ikoni" src="address-card-solid.svg" height="20px">
-
-                            <img class="info__listaus__toimitustavat__ikoni" src="truck-solid.svg" height="20px">
-
-                            <img class="info__listaus__maksutavat__ikoni" src="euro-sign-solid.svg" height="20px">
-
-                            <img class="info__listaus__takuupalautus__ikoni" src="circle-info-solid.svg" height="20px">
-
-                            <img class="info__listaus__palvelut-ja-huolto__ikoni" src="screwdriver-wrench-solid.svg"
-                                height="20px">
-
-                            <img class="info__listaus__ukk__ikoni" src="circle-question-solid.svg" height="20px">
-
-                            <img class="info__listaus__yritysmyynti__ikoni" src="building-solid.svg" height="20px">
-
-                            <img class="info__listaus__ura__ikoni" src="briefcase-solid.svg" height="20px">
-
-                            <img class="info__listaus__tuoteturva__ikoni" src="file-lines-solid.svg" height="20px">
-
-                        </div>
-                        <div class="info__listaus__tekstit">
-                            <div class="info__listaus__yhteystiedot">
-                                <div class="info__listaus__yhteystiedot__teksti"><a href="#">Yhteystiedot</a></div>
-                            </div>
-                            <div class="info__listaus__toimitustavat">
-                                <div class="info__listaus__toimitustavat__teksti"><a href="#">Toimitustavat</a></div>
-                            </div>
-                            <div class="info__listaus__maksutavat">
-                                <div class="info__listaus__maksutavat__teksti"><a href="#">Maksutavat</a></div>
-                            </div>
-                            <div class="info__listaus__takuupalautus">
-                                <div class="info__listaus__takuupalautus__teksti"><a href="#">Takuupalautus</a></div>
-                            </div>
-                            <div class="info__listaus__palvelut-ja-huolto">
-                                <div class="info__listaus__palvelut-ja-huolto__teksti"><a href="#">Palvelut ja
-                                        huolto</a>
+            <ul class="sivun-yläpalkki__alempi-rivi">
+                <li class="sivun-yläpalkki__alempi-rivi__tietokoneet"><a href="#">Tietokoneet</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__komponentit"><a href="#">Komponentit</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__oheislaitteet"><a href="#">Oheislaitteet</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__pelaaminen"><a href="#">Pelaaminen</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__sim-racing"><a href="#">Sim racing</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__verkkotuotteet"><a href="#">Verkkotuotteet</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__tarvikkeet"><a href="#">Tarvikkeet</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__erikoistuotteet"><a href="#">Erikoistuotteet</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__ohjelmistot"><a href="#">Ohjelmistot</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__palvelut"><a href="#">Palvelut</a></li>
+                <li class="sivun-yläpalkki__alempi-rivi__kampanjat"><a href="#">Kampanjat</a></li>
+            </ul>
+        </header>
+        <section class="sivun-sisältö"></section>
+        <footer class="sivun-alapalkki">
+            <div class="sivun-alapalkki__harmaa-alue">
+                <div class="sivun-alapalkki__harmaa-alue__yläosa">
+                    <div class="sivun-alapalkki__harmaa-alue__yläosa__rivi">
+                        <div class="sivun-alapalkki__harmaa-alue__sarake">
+                            <div class="asiakaspalvelu">
+                                <h2 class="asiakaspalvelu__otsikko harmaa-osio__otsikko">Asiakaspalvelu</h2>
+                                <div class="asiakaspalvelu__aukioloajat">Ma - Su 24 / 7</div>
+                                <div class="aspa-puhelin">
+                                    <img class="asiakaspalvelu__puhelin-ikoni" src="phone-solid.svg" height="20px">
+                                    <div class="asiakaspalvelu__puhelinnumero">+222 22 22 22222</div>
+                                </div>
+                                <div class="aspa-sähköposti">
+                                    <img class="asiakaspalvelu__sähköposti-ikoni" src="envelope-solid.svg"
+                                        height="20px">
+                                    <div class="asiakaspalvelu__sähköpostiosoite">asiakaspalvelu@kauppa.tld</div>
                                 </div>
                             </div>
-                            <div class="info__listaus__ukk">
-                                <div class="info__listaus__ukk__teksti"><a href="#">Usein kysytyt kysymykset</a></div>
+                            <div class="yritysmyynti">
+                                <h2 class="yritysmyynti__otsikko harmaa-osio__otsikko">Yritysmyynti</h2>
+                                <div class="yritysmyynti__aukioloajat">Ma - Su 24 / 7</div>
+                                <div class="yritysmyynti-puhelin">
+                                    <img class="yritysmyynti__puhelin-ikoni" src="phone-solid.svg" height="20px">
+                                    <div class="yritysmyynti__puhelinnumero">+222 22 22 22222</div>
+                                </div>
+                                <div class="yritysmyynti-sähköposti">
+                                    <img class="yritysmyynti__sähköposti-ikoni" src="envelope-solid.svg" height="20px">
+                                    <div class="yritysmyynti__sähköpostiosoite">yritysmyynti@kauppa.tld</div>
+                                </div>
                             </div>
-                            <div class="info__listaus__yritysmyynti">
-                                <div class="info__listaus__yritysmyynti__teksti"><a href="#">Yritysmyynti</a></div>
+                        </div>
+                        <div class="myymälä">
+                            <h2 class="myymälä__otsikko harmaa-osio__otsikko">Myymälä Turku</h2>
+                            <ul class="myymälä__aukioloajat">
+                                <li class="myymälä__aukioloajat__ma-pe">Ma - Pe 11:00 - 22:00</li>
+                                <li class="myymälä__aukioloajat__la">La 10:00 - 22:00</li>
+                            </ul>
+                            <div class="myymälä__maksutavat">Maksuvälineenä käyvät yleisimmät pankki- ja luottokortit
+                                sekä
+                                mobiilimaksutavat. Ei käteismaksumahdollisuutta.</div>
+                            <div class="myymälä__sijainti">
+                                <img class="myymälä__sijainti-ikoni" src="location-dot-solid.svg" height="20px">
+                                <div class="myymälä__sijainti__osoite">
+                                    <div class="myymälä__katuosoite">Kakskakkosenkatu 22</div>
+                                    <div class="myymälä__postinumero-ja-kaupunki">22222 Turku</div>
+                                </div>
                             </div>
-                            <div class="info__listaus__ura">
-                                <div class="info__listaus__ura__teksti"><a href="#">Ura Kauppa'sillä</a></div>
-                            </div>
-                            <div class="info__listaus__tuoteturva">
-                                <div class="info__listaus__tuoteturva__teksti"><a href="#">Kauppa's tuoteturva</a></div>
+                        </div>
+                        <div class="yhteisöt">
+                            <h2 class="yhteisöt__otsikko harmaa-osio__otsikko">Yhteisöt</h2>
+                            <ul class="yhteisöt__kuvakkeet">
+                                <li class="yhteisöt__facebook"><a href="#"><img class="facebook--vaalea"
+                                            src="facebook-brands-solid.svg" height="20px"><img class="facebook--oranssi"
+                                            src="facebook-orange.svg" height="20px"></a></li>
+                                <li class="yhteisöt__instagram"><a href="#"><img class="instagram--vaalea"
+                                            src="instagram-brands-solid.svg" height="20px"><img
+                                            class="instagram--oranssi" src="instagram-orange.svg" height="20px"></a>
+                                </li>
+                                <li class="yhteisöt__twitter"><a href="#"><img class="twitter--vaalea"
+                                            src="twitter-brands-solid.svg" height="20px"><img class="twitter--oranssi"
+                                            src="twitter-orange.svg" height="20px"></a></li>
+                                <li class="yhteisöt__youtube"><a href="#"><img class="youtube--vaalea"
+                                            src="youtube-brands-solid.svg" height="20px"><img class="youtube--oranssi"
+                                            src="youtube-orange.svg" height="20px"></a></li>
+                                <li class="yhteisöt__tiktok"><a href="#"><img class="tiktok--vaalea"
+                                            src="tiktok-brands-solid.svg" height="20px"><img class="tiktok--oranssi"
+                                            src="tiktok-orange.svg" height="20px"></a></li>
+                                <li class="yhteisöt__linkedin"><a href="#"><img class="linkedin--vaalea"
+                                            src="linkedin-brands-solid.svg" height="20px"><img class="linkedin--oranssi"
+                                            src="linkedin-orange.svg" height="20px"></a></li>
+                            </ul>
+                        </div>
+                        <div class="uutiskirje">
+                            <h2 class="uutiskirje__otsikko harmaa-osio__otsikko">Tilaa uutiskirje</h2>
+                            <div class="uutiskirje__teksti">Tilaa Kauppa'sin uutiskirje ja saat ensimmäisten joukossa
+                                tietoa
+                                tarjouksista, tapahtumista ja uusista tuotteista.
+                                <h2 class="uutiskirje__nappi"><button type="button"
+                                        class="uutiskirje__nappi__nappula">Tilaa
+                                        uutiskirje</button></h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="shop-in-shops">
-                    <h2 class="shop-in-shops__otsikko harmaa-osio__otsikko">Shop-In-Shops</h2>
-                    <ul class="shop-in-shops__listaus">
-                        <li class="shop-in-shops__listaus__apnx">
-                            <a href="#">APNX</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__ducky">
-                            <a href="#">Ducky</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__endgame-gear">
-                            <a href="#">Endgame Gear</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__kolink">
-                            <a href="#">Kolink</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__nitro-concepts">
-                            <a href="#">Nitro Concepts</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__noblechairs">
-                            <a href="#">noblechairs</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__streamplify">
-                            <a href="#">Streamplify</a>
-                        </li>
-                    </ul>
-                    <ul class="shop-in-shops__listaus__alemmat">
-                        <li class="shop-in-shops__listaus__asus">
-                            <a href="#">Asus</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__acer">
-                            <a href="#">Acer</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__akasa">
-                            <a href="#">Akasa</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__cooler-master">
-                            <a href="#">Cooler Master</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__corsair">
-                            <a href="#">Corsair</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__fractal-design">
-                            <a href="#">Fractal Design</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__gigabyte">
-                            <a href="#">Gigabyte</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__logitech">
-                            <a href="#">Logitech</a>
-                        </li>
-                        <li class="shop-in-shops__listaus__phanteks">
-                            <a href="#">Phanteks</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="artikkelit-ja-blogi">
-                    <h2 class="artikkelit-ja-blogi__otsikko harmaa-osio__otsikko">Artikkelit ja blogi</h2>
-                    <div class="artikkelit-ja-blogi__oppaat"><a href="#">Kauppa's oppaat</a></div>
-                    <div class="artikkelit-ja-blogi__blogi"><a href="#">Kauppa's blogi</a></div>
-                </div>
-                <div class="sertifikaatit-ja-palkinnot">
-                    <h2 class="sertifikaatit-ja-palkinnot__otsikko harmaa-osio__otsikko">Sertifikaatit ja palkinnot</h2>
-                    <div class="sertifikaatit-ja-palkinnot__kuvat">
-                        <div class="sertifikaatit-ja-palkinnot__kauppalehti-menestyjät">Kauppa-aviisi menestyjät</div>
-                        <div class="sertifikaatit-ja-palkinnot__vuoden-paras-kauppa-2022">Vuoden paras kauppa 2222</div>
+            </div>
+            <div class="sivun-alapalkki__harmaa-alue__alaosa">
+                <div class="sivun-alapalkki__harmaa-alue__alaosa__sisältö">
+                    <div class="info">
+                        <h2 class="info__otsikko harmaa-osio__otsikko">Info</h2>
+                        <div class="info__listaus">
+                            <div class="info__listaus__ikonit">
+                                <img class="info__listaus__yhteystiedot__ikoni" src="address-card-solid.svg"
+                                    height="20px">
+
+                                <img class="info__listaus__toimitustavat__ikoni" src="truck-solid.svg" height="20px">
+
+                                <img class="info__listaus__maksutavat__ikoni" src="euro-sign-solid.svg" height="20px">
+
+                                <img class="info__listaus__takuupalautus__ikoni" src="circle-info-solid.svg"
+                                    height="20px">
+
+                                <img class="info__listaus__palvelut-ja-huolto__ikoni" src="screwdriver-wrench-solid.svg"
+                                    height="20px">
+
+                                <img class="info__listaus__ukk__ikoni" src="circle-question-solid.svg" height="20px">
+
+                                <img class="info__listaus__yritysmyynti__ikoni" src="building-solid.svg" height="20px">
+
+                                <img class="info__listaus__ura__ikoni" src="briefcase-solid.svg" height="20px">
+
+                                <img class="info__listaus__tuoteturva__ikoni" src="file-lines-solid.svg" height="20px">
+
+                            </div>
+                            <div class="info__listaus__tekstit">
+                                <div class="info__listaus__yhteystiedot">
+                                    <div class="info__listaus__yhteystiedot__teksti"><a href="#">Yhteystiedot</a></div>
+                                </div>
+                                <div class="info__listaus__toimitustavat">
+                                    <div class="info__listaus__toimitustavat__teksti"><a href="#">Toimitustavat</a>
+                                    </div>
+                                </div>
+                                <div class="info__listaus__maksutavat">
+                                    <div class="info__listaus__maksutavat__teksti"><a href="#">Maksutavat</a></div>
+                                </div>
+                                <div class="info__listaus__takuupalautus">
+                                    <div class="info__listaus__takuupalautus__teksti"><a href="#">Takuupalautus</a>
+                                    </div>
+                                </div>
+                                <div class="info__listaus__palvelut-ja-huolto">
+                                    <div class="info__listaus__palvelut-ja-huolto__teksti"><a href="#">Palvelut ja
+                                            huolto</a>
+                                    </div>
+                                </div>
+                                <div class="info__listaus__ukk">
+                                    <div class="info__listaus__ukk__teksti"><a href="#">Usein kysytyt kysymykset</a>
+                                    </div>
+                                </div>
+                                <div class="info__listaus__yritysmyynti">
+                                    <div class="info__listaus__yritysmyynti__teksti"><a href="#">Yritysmyynti</a></div>
+                                </div>
+                                <div class="info__listaus__ura">
+                                    <div class="info__listaus__ura__teksti"><a href="#">Ura Kauppa'sillä</a></div>
+                                </div>
+                                <div class="info__listaus__tuoteturva">
+                                    <div class="info__listaus__tuoteturva__teksti"><a href="#">Kauppa's tuoteturva</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-in-shops">
+                        <h2 class="shop-in-shops__otsikko harmaa-osio__otsikko">Shop-In-Shops</h2>
+                        <ul class="shop-in-shops__listaus">
+                            <li class="shop-in-shops__listaus__apnx">
+                                <a href="#">APNX</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__ducky">
+                                <a href="#">Ducky</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__endgame-gear">
+                                <a href="#">Endgame Gear</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__kolink">
+                                <a href="#">Kolink</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__nitro-concepts">
+                                <a href="#">Nitro Concepts</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__noblechairs">
+                                <a href="#">noblechairs</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__streamplify">
+                                <a href="#">Streamplify</a>
+                            </li>
+                        </ul>
+                        <ul class="shop-in-shops__listaus__alemmat">
+                            <li class="shop-in-shops__listaus__asus">
+                                <a href="#">Asus</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__acer">
+                                <a href="#">Acer</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__akasa">
+                                <a href="#">Akasa</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__cooler-master">
+                                <a href="#">Cooler Master</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__corsair">
+                                <a href="#">Corsair</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__fractal-design">
+                                <a href="#">Fractal Design</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__gigabyte">
+                                <a href="#">Gigabyte</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__logitech">
+                                <a href="#">Logitech</a>
+                            </li>
+                            <li class="shop-in-shops__listaus__phanteks">
+                                <a href="#">Phanteks</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="artikkelit-ja-blogi">
+                        <h2 class="artikkelit-ja-blogi__otsikko harmaa-osio__otsikko">Artikkelit ja blogi</h2>
+                        <div class="artikkelit-ja-blogi__oppaat"><a href="#">Kauppa's oppaat</a></div>
+                        <div class="artikkelit-ja-blogi__blogi"><a href="#">Kauppa's blogi</a></div>
+                    </div>
+                    <div class="sertifikaatit-ja-palkinnot">
+                        <h2 class="sertifikaatit-ja-palkinnot__otsikko harmaa-osio__otsikko">Sertifikaatit ja palkinnot
+                        </h2>
+                        <div class="sertifikaatit-ja-palkinnot__kuvat">
+                            <div class="sertifikaatit-ja-palkinnot__kauppalehti-menestyjät">Kauppa-aviisi menestyjät
+                            </div>
+                            <div class="sertifikaatit-ja-palkinnot__vuoden-paras-kauppa-2022">Vuoden paras kauppa 2222
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sivun-alapalkki__musta-alue">
-            <div class="sivun-alapalkki__musta-alue__linkit">
-                <div class="sivun-alapalkki__musta-alue__linkit__ehdot"><a href="#">Takuu-ja toimitusehdot</a></div>
-                <div class="sivun-alapalkki__musta-alue__linkit__tietosuojaseloste"><a href="#">Tietosuojaseloste</a>
+            <div class="sivun-alapalkki__musta-alue">
+                <div class="sivun-alapalkki__musta-alue__linkit">
+                    <div class="sivun-alapalkki__musta-alue__linkit__ehdot"><a href="#">Takuu-ja toimitusehdot</a></div>
+                    <div class="sivun-alapalkki__musta-alue__linkit__tietosuojaseloste"><a
+                            href="#">Tietosuojaseloste</a>
+                    </div>
                 </div>
+                <div class="sivun-alapalkki__musta-alue__copyright">Terveisiä vuodesta 2222</div>
             </div>
-            <div class="sivun-alapalkki__musta-alue__copyright">Terveisiä vuodesta 2222</div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 </body>
 
 </html>
