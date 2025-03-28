@@ -1658,6 +1658,10 @@ ul {
 }
 
 @media (max-width: 1275px) {
+    #projektini {
+        display: none;
+    }
+
     .sivun-yläpalkki__ylempi-rivi__otsikko {
         display: flex;
         flex-direction: row;
