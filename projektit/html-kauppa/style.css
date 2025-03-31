@@ -1926,21 +1926,24 @@ ul {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 584px) {
     .projekti-banneri {
-        height: 110px;
+        height: 80px;
     }
 
     .sisältö {
-        padding-top: 110px;
+        padding-top: 80px;
     }
 
     .sivun-sisältö {
-        height: calc(28px + 120px);
+        height: calc(28px + 70px);
     }
 }
 
 @media (max-width: 480px) {
+    .sivun-sisältö {
+        height: calc(28px + 120px);
+    }
     .sivun-yläpalkki__ylempi-rivi__otsikko {
         display: flex;
         flex-direction: row;
@@ -2047,5 +2050,19 @@ ul {
 
     .sertifikaatit-ja-palkinnot {
         margin-bottom: var(--väli-x2);
+    }
+}
+
+@media (max-width: 365px) {
+    .projekti-banneri {
+        height: 110px;
+    }
+
+    .sisältö {
+        padding-top: 110px;
+    }
+
+    .sivun-sisältö {
+        height: calc(28px + 120px);
     }
 }
