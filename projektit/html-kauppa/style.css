@@ -7,9 +7,11 @@
     --fontti-koko-otsikko: 1.25rem;
     --fontti-koko-nappi: 1rem;
     --fontti-koko-listaus: 1rem;
+    --fontti-koko-logo: 22px;
     --fontti-koko-logo-mobiili: 2.25rem;
     --fontti-paksuus-otsikko: 500;
     --fontti-paksuus-listaus: 500;
+    --fontti-paksuus-logo: 700;
     --väri-musta: #161a1c;
     --väri-valkoinen: #fff;
     --väri-ensisijainen: #EE6622;
@@ -20,17 +22,26 @@
     --väri-teksti-sisältö: #000;
     --väri-reunus: #858b90;
     --väri-harmaa: #9a9a9a;
+    --sivun-sisältö-korkeus: 28px;
     --väli-x1: 10px;
     --väli-x2: 20px;
     --väli-x3: 30px;
     --väli-x4: 40px;
     --väli-x5: 50px;
+    --väli-x6: 60px;
+    --väli-x7: 70px;
+    --väli-x8: 80px;
+    --väli-x9: 90px;
+    --väli-x10: 100px;
+    --leveys-puolikas: 50%;
+    --leveys-täysi: 100%;
+    --ostoskori-mitta: 51.5px;
 }
 
 .projekti-banneri {
-    height: 50px;
+    height: var(--väli-x5);
     position: fixed;
-    width: 100%;
+    width: var(--leveys-täysi);
 }
 
 #projektini {
@@ -45,13 +56,14 @@
 }
 
 .sisältö {
-    padding-top: 50px;
+    padding-top: var(--väli-x5);
 }
 
 body {
     margin: 0 auto;
     font-family: opensans;
     font-size: var(--fontti-koko-leipäteksti);
+    background-color: var(--väri-musta);
 }
 
 h1,
@@ -78,14 +90,14 @@ h6 {
     color: var(--väri-teksti-yläpalkki);
     height: 120px;
     position: fixed;
-    width: 100%;
+    width: var(--leveys-täysi);
 }
 
 .sivun-yläpalkki__ylempi-rivi {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: var(--väli-x2);
     padding-bottom: 2px;
     align-items: center;
 }
@@ -97,19 +109,19 @@ h6 {
     justify-content: center;
     background-image: linear-gradient(to right, #ff6000, #f6b210);
     border-radius: 50%;
-    width: 100px;
-    height: 50px;
+    width: var(--väli-x10);
+    height: var(--väli-x5);
     text-align: center;
     align-items: center;
 }
 
 .logo,
 .logo-mobiili {
-    color: white !important;
+    color: var(--väri-valkoinen) !important;
     font-family: fugazone;
     text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 700;
+    font-size: var(--fontti-koko-logo);
+    font-weight: var(--fontti-paksuus-logo);
     text-shadow: 2px 2px 2px black;
 }
 
@@ -121,10 +133,10 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
-    color: #161a1c;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-musta);
     width: 70%;
-    height: 50px;
+    height: var(--väli-x5);
     align-self: center;
     border-radius: 2px;
     border: solid 2px rgba(206, 212, 218, 0.6);
@@ -144,8 +156,8 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: var(--väli-x1);
+    margin-left: var(--väli-x1);
 }
 
 .sivun-yläpalkki__ylempi-rivi__hae-tuotteista {
@@ -153,8 +165,8 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
     border: none;
-    width: 100%;
-    margin-right: 10px;
+    width: var(--leveys-täysi);
+    margin-right: var(--väli-x1);
 }
 
 .sivun-yläpalkki__ylempi-rivi__hae-tuotteista:active {
@@ -175,15 +187,15 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15 15;
+    padding: 15px 15px;
     border-radius: 2px;
     align-content: center;
 }
 
 .oma-tili:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
     border-radius: 2px;
-    color: #161a1c;
+    color: var(--väri-musta);
 }
 
 .oma-tili:hover .oma-tili-ikoni--tumma {
@@ -198,7 +210,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
 }
 
 .oma-tili-ikoni--tumma {
@@ -215,11 +227,11 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 2px white;
-    min-width: 51.5px;
-    max-width: 51.5px;
-    min-height: 51.5px;
-    max-height: 51.5px;
+    border: solid 2px var(--väri-valkoinen);
+    min-width: var(--ostoskori-mitta);
+    max-width: var(--ostoskori-mitta);
+    min-height: var(--ostoskori-mitta);
+    max-height: var(--ostoskori-mitta);
     align-self: center;
     border-radius: 2px;
 }
@@ -229,13 +241,13 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     border: none;
-    min-width: 51.5px;
-    max-width: 51.5px;
-    min-height: 51.5px;
-    max-height: 51.5px;
+    min-width: var(--ostoskori-mitta);
+    max-width: var(--ostoskori-mitta);
+    min-height: var(--ostoskori-mitta);
+    max-height: var(--ostoskori-mitta);
     align-self: center;
     border-radius: 2px;
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__ylempi-rivi__ostoskori__kuva--vaalea {
@@ -268,7 +280,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
     padding-left: 0;
 }
@@ -277,7 +289,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -285,7 +297,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -293,7 +305,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -301,7 +313,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -309,7 +321,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -317,7 +329,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -325,7 +337,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -333,7 +345,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -341,7 +353,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
 }
 
@@ -349,118 +361,118 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 12 12;
+    padding: 12px 12px;
     flex: 1;
     padding-right: 0;
 }
 
 .sivun-yläpalkki__alempi-rivi__tietokoneet:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__komponentit:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__oheislaitteet:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__pelaaminen:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__sim-racing:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__verkkotuotteet:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__tarvikkeet:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__erikoistuotteet:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__ohjelmistot:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__palvelut:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__kampanjat:hover {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
 }
 
 .sivun-yläpalkki__alempi-rivi__tietokoneet:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__komponentit:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__oheislaitteet:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__pelaaminen:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__sim-racing:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__verkkotuotteet:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__tarvikkeet:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__erikoistuotteet:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__ohjelmistot:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__palvelut:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-yläpalkki__alempi-rivi__kampanjat:hover a {
-    background-color: white;
-    color: #EE6622;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
@@ -468,15 +480,14 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #ced4da;
-    padding-top: 10px;
+    color: var(--väri-teksti-alapalkki);
 }
 
 .sivun-alapalkki__harmaa-alue {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #23272b;
+    background-color: var(--väri-tausta);
     padding: 0 75px;
 }
 
@@ -484,7 +495,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: var(--väli-x3) 0;
 }
 
 .sivun-alapalkki__harmaa-alue__yläosa__rivi {
@@ -520,7 +531,7 @@ input:focus {
 
 .asiakaspalvelu__sarake {
     border-bottom: solid 1px var(--väri-reunus);
-    padding-bottom: 20px;
+    padding-bottom: var(--väli-x2);
     max-width: 90%;
 }
 
@@ -546,7 +557,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
 }
 
 .asiakaspalvelu__puhelinnumero {
@@ -565,7 +576,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
 }
 
 .asiakaspalvelu__sähköpostiosoite {
@@ -578,7 +589,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: var(--väli-x3) 0;
 }
 
 .yritysmyynti__otsikko {
@@ -603,7 +614,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
 }
 
 .yritysmyynti__puhelinnumero {
@@ -622,7 +633,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
 }
 
 .yritysmyynti__sähköpostiosoite {
@@ -690,7 +701,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    min-width: 80px;
+    min-width: var(--väli-x8);
     padding-right: var(--väli-x3);
 }
 
@@ -698,7 +709,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    min-width: 80px;
+    min-width: var(--väli-x8);
     padding-right: var(--väli-x3);
 }
 
@@ -706,21 +717,21 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: var(--väli-x2);
 }
 
 .myymälä__sijainti {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-top: 20px;
+    margin-top: var(--väli-x2);
 }
 
 .myymälä__sijainti-ikoni {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
 }
 
 .myymälä__sijainti__osoite {
@@ -765,42 +776,42 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: var(--väli-x1);
 }
 
 .yhteisöt__instagram {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: var(--väli-x1);
 }
 
 .yhteisöt__twitter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: var(--väli-x1);
 }
 
 .yhteisöt__youtube {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: var(--väli-x1);
 }
 
 .yhteisöt__tiktok {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: var(--väli-x1);
 }
 
 .yhteisöt__linkedin {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: var(--väli-x1);
 }
 
 .facebook--oranssi,
@@ -898,32 +909,32 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    padding: 20px 0;
+    width: var(--leveys-puolikas);
+    padding: var(--väli-x2) 0;
 }
 
 .uutiskirje__nappi__nappula {
-    background-color: #EE6622;
-    color: white;
+    background-color: var(--väri-ensisijainen);
+    color: var(--väri-valkoinen);
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
-    padding: 10;
-    font-weight: 500;
+    padding: var(--väli-x1);
+    font-weight: var(--fontti-paksuus-otsikko);
     font-size: var(--fontti-koko-nappi);
     width: max-content;
     cursor: pointer;
 }
 
 .uutiskirje__nappi__nappula:hover {
-    background-color: #f17d43;
+    background-color: var(--väri-toissijainen);
 }
 
 .sivun-alapalkki__harmaa-alue__alaosa {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #23272b;
+    background-color: var(--väri-tausta);
     padding: 0 75px;
 }
 
@@ -932,14 +943,14 @@ input:focus {
     flex-direction: row;
     justify-content: space-between;
     border-top: solid 1px grey;
-    margin: 10px 0;
+    margin: var(--väli-x1) 0;
 }
 
 .info,
 .shop-in-shops,
 .artikkelit-ja-blogi,
 .sertifikaatit-ja-palkinnot {
-    padding: 30px 0;
+    padding: var(--väli-x3) 0;
 }
 
 .info,
@@ -972,9 +983,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__yhteystiedot__teksti {
@@ -993,9 +1004,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__toimitustavat__teksti {
@@ -1014,9 +1025,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__maksutavat__teksti {
@@ -1035,9 +1046,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__takuupalautus__teksti {
@@ -1056,9 +1067,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__palvelut-ja-huolto__teksti {
@@ -1077,9 +1088,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__ukk__teksti {
@@ -1098,9 +1109,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__yritysmyynti__teksti {
@@ -1119,9 +1130,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__ura__teksti {
@@ -1140,9 +1151,9 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-right: 10px;
+    margin-right: var(--väli-x1);
     margin-bottom: 11.5px;
-    min-width: 30px;
+    min-width: var(--väli-x3);
 }
 
 .info__listaus__tuoteturva__teksti {
@@ -1330,10 +1341,10 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--leveys-puolikas);
     background-color: var(--väri-valkoinen);
-    width: 100px;
-    height: 100px;
+    width: var(--väli-x10);
+    height: var(--väli-x10);
     margin-right: var(--väli-x2);
     align-items: center;
 }
@@ -1342,7 +1353,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--leveys-puolikas);
     background-color: blue;
     width: 92px;
     height: 92px;
@@ -1380,10 +1391,10 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--leveys-puolikas);
     background-color: red;
-    width: 100px;
-    height: 100px;
+    width: var(--väli-x10);
+    height: var(--väli-x10);
     text-align: center;
     font-size: small;
     font-weight: bold;
@@ -1394,7 +1405,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--leveys-puolikas);
     background-color: yellow;
     width: 80px;
     height: 80px;
@@ -1415,16 +1426,16 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #161a1c;
-    color: #ced4da;
-    padding: 20px 0;
+    background-color: var(--väri-musta);
+    color: var(--väri-teksti-alapalkki);
+    padding: var(--väli-x2) 0;
 }
 
 .sivun-alapalkki__musta-alue__linkit {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--väli-x2);
 }
 
 .sivun-alapalkki__musta-alue__linkit__ehdot {
@@ -1446,30 +1457,28 @@ input:focus {
 }
 
 .harmaa-osio__otsikko {
-    margin-bottom: 20px;
-    color: #e9ecef;
+    margin-bottom: var(--väli-x2);
+    color: var(--väri-teksti-yläpalkki);
     text-transform: uppercase;
 }
 
 a:link,
 a:visited {
-    color: #e9ecef;
+    color: var(--väri-teksti-yläpalkki);
     text-decoration: none;
 }
 
 a:hover {
-    color: #EE6622;
+    color: var(--väri-ensisijainen);
     text-decoration: none;
 }
 
 .sivun-sisältö {
-    background-color: white;
+    background-color: var(--väri-valkoinen);
     display: flex;
-    min-height: 14px;
-    max-height: 14px;
-    min-width: 100%;
-    max-width: 100%;
-    margin-top: 120px;
+    height: calc(28px + 120px);
+    min-width: var(--leveys-täysi);
+    max-width: var(--leveys-täysi);
 }
 
 ul {
@@ -1480,7 +1489,7 @@ ul {
 
 .asiakaspalvelu__aukioloajat,
 .yritysmyynti__aukioloajat {
-    margin-bottom: 20px;
+    margin-bottom: var(--väli-x2);
 }
 
 .shop-in-shops__listaus li::after,
@@ -1496,7 +1505,7 @@ ul {
 }
 
 .hamburger-menu {
-    height: 0px;
+    height: 0;
 }
 
 #menu-toggle {
@@ -1530,8 +1539,8 @@ ul {
     display: flex;
     align-items: center;
     position: static;
-    top: 20px;
-    left: 20px;
+    top: var(--väli-x2);
+    left: var(--väli-x2);
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -1615,7 +1624,7 @@ ul {
     top: 0;
     left: -100%;
     width: 260px;
-    height: 100%;
+    height: var(--leveys-täysi);
     margin: 0;
     list-style: none;
     background-color: var(--väri-valkoinen);
@@ -1642,7 +1651,7 @@ ul {
 
 .menu-listaus-item-tyhjä {
     display: flex;
-    padding: 30px 24px;
+    padding: var(--väli-x3) 24px;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
@@ -1662,14 +1671,18 @@ ul {
         display: none;
     }
 
+    .sivun-sisältö {
+        height: calc(28px + 70px);
+    }
+
     .sivun-yläpalkki__ylempi-rivi__otsikko {
         display: flex;
         flex-direction: row;
         justify-content: center;
         background-image: linear-gradient(to right, #ff6000, #f6b210);
-        border-radius: 50%;
-        width: 100px;
-        height: 50px;
+        border-radius: var(--leveys-puolikas);
+        width: var(--väli-x10);
+        height: var(--väli-x5);
         text-align: center;
         align-items: center;
         margin-left: var(--väli-x2);
@@ -1682,7 +1695,7 @@ ul {
 
     .logo,
     .logo-mobiili {
-        color: white !important;
+        color: var(--väri-valkoinen) !important;
         font-family: fugazone;
         text-transform: uppercase;
         font-size: 22px;
@@ -1696,6 +1709,11 @@ ul {
 
     .oma-tili-ikoni {
         margin: 0;
+    }
+
+    .sivun-yläpalkki__ylempi-rivi__tili {
+        margin-left: var(--väli-x1);
+        margin-right: var(--väli-x1);
     }
 
     .sivun-yläpalkki__ylempi-rivi__kirjaudu {
@@ -1714,10 +1732,10 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: white;
-        color: #161a1c;
+        background-color: var(--väri-valkoinen);
+        color: var(--väri-musta);
         width: 70%;
-        height: 50px;
+        height: var(--väli-x5);
         align-self: center;
         border-radius: 2px;
         border: solid 2px rgba(206, 212, 218, 0.6);
@@ -1733,8 +1751,8 @@ ul {
         display: flex;
         align-items: center;
         position: static;
-        top: 20px;
-        left: 20px;
+        top: var(--väli-x2);
+        left: var(--väli-x2);
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -1745,7 +1763,7 @@ ul {
         padding: 0 14px;
         padding-bottom: var(--väli-x1);
         padding-top: var(--väli-x1);
-        height: 70px;
+        height: var(--väli-x7);
     }
 
     .sivun-yläpalkki__ylempi-rivi {
@@ -1783,8 +1801,8 @@ ul {
         justify-content: center;
         background-image: linear-gradient(to right, #ff6000, #f6b210);
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: var(--väli-x4);
+        height: var(--väli-x4);
         text-align: center;
         align-content: center;
         margin-left: var(--väli-x2);
@@ -1815,10 +1833,10 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: white;
-        color: #161a1c;
+        background-color: var(--väri-valkoinen);
+        color: var(--väri-musta);
         width: 70%;
-        height: 50px;
+        height: var(--väli-x5);
         align-self: center;
         border-radius: 2px;
         border: solid 2px rgba(206, 212, 218, 0.6);
@@ -1834,8 +1852,8 @@ ul {
         display: flex;
         align-items: center;
         position: static;
-        top: 20px;
-        left: 20px;
+        top: var(--väli-x2);
+        left: var(--väli-x2);
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -1880,7 +1898,7 @@ ul {
         flex-direction: column;
         justify-content: start;
         flex: 1;
-        padding: 30px 0;
+        padding: var(--väli-x3) 0;
     }
 
     .yhteisöt {
@@ -1910,11 +1928,15 @@ ul {
 
 @media (max-width: 600px) {
     .projekti-banneri {
-        height: 80px;
+        height: 110px;
     }
 
     .sisältö {
-        padding-top: 80px;
+        padding-top: 110px;
+    }
+
+    .sivun-sisältö {
+        height: calc(28px + 120px);
     }
 }
 
@@ -1925,8 +1947,8 @@ ul {
         justify-content: center;
         background-image: linear-gradient(to right, #ff6000, #f6b210);
         border-radius: 50%;
-        width: 80px;
-        height: 40px;
+        width: var(--väli-x8);
+        height: var(--väli-x4);
         text-align: center;
         align-items: center;
         margin-left: var(--väli-x3);
@@ -1938,7 +1960,7 @@ ul {
 
     .logo,
     .logo-mobiili {
-        color: white !important;
+        color: var(--väri-valkoinen) !important;
         font-family: fugazone;
         text-transform: uppercase;
         font-size: 18px;
@@ -1962,9 +1984,9 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: white;
-        color: #161a1c;
-        width: 100%;
+        background-color: var(--väri-valkoinen);
+        color: var(--väri-musta);
+        width: var(--leveys-täysi);
         height: 35px;
         align-self: center;
         border-radius: 2px;
@@ -1980,8 +2002,8 @@ ul {
         display: flex;
         align-items: center;
         position: static;
-        top: 20px;
-        left: 20px;
+        top: var(--väli-x2);
+        left: var(--väli-x2);
         width: 26px;
         height: 26px;
         cursor: pointer;
