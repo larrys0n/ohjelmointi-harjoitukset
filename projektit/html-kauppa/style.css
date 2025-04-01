@@ -1944,6 +1944,7 @@ ul {
     .sivun-sisältö {
         height: calc(28px + 120px);
     }
+
     .sivun-yläpalkki__ylempi-rivi__otsikko {
         display: flex;
         flex-direction: row;
